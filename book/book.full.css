@@ -1,0 +1,150 @@
+
+
+.book {
+    line-height: 1.5em;
+
+    -moz-perspective: 1000px;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.fol {
+    width: 100%;
+    
+    -moz-transition: visibility 0s 2s;
+    -o-transition: visibility 0s 2s;
+    -webkit-transition: visibility 0s 2s;
+    transition: visibility 0s 2s;
+
+}
+
+/*.fol {
+    display: table;
+}
+.fol .page:before {
+    content: "";
+    display: block;
+    float: left;
+    height: 36em;
+    width: 0;
+}
+.fol .page {
+    display: table-cell;
+    float: none;
+}*/
+
+.fol {
+    bottom: 0;
+
+    /*display: -moz-box;*/
+    display: -ms-box;
+    display: -o-box; /* NOT SUPPORTED */
+    display: -webkit-box;
+    display: box;
+    
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex; /* NOT SUPPORTED */
+    display: -webkit-flex;
+    display: flex;
+    
+    float: left;
+    left: 0;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    /*overflow: hidden;*/
+}
+
+input[name=fol]:checked + label + .fol {
+    height: auto;
+    margin-top: -1.5em;
+    position: relative;
+    visibility: visible;
+
+    -moz-transition:
+        z-index 0s 1s;
+    -o-transition:
+        z-index 0s 1s;
+    -webkit-transition:
+        z-index 0s 1s;
+    transition:
+        z-index 0s 1s;
+}
+
+input[name=fol]:checked + label + .fol ~ .fol {
+
+}
+
+.page {
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+    max-height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    -moz-transition:
+        -moz-transform 2s,
+        z-index 2s;
+    -o-transition:
+        -o-transform 2s,
+        z-index 2s;
+    -webkit-transition:
+        -webkit-transform 2s,
+        z-index 2s;
+    transition:
+        transform 2s,
+        z-index 2s;
+
+    -moz-transform-origin: right;
+    -o-transform-origin: right;
+    -webkit-transform-origin: right;
+    transform-origin: right;
+}
+
+.page + .page {
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+
+    -moz-transform-origin: left;
+    -o-transform-origin: left;
+    -webkit-transform-origin: left;
+    transform-origin: left;
+
+    z-index: 200;
+}
+
+input[name=fol]:checked + label + .fol .page {
+    max-height: none;
+    overflow: visible;
+
+    -moz-transform: none;
+    -o-transform: none;
+    -webkit-transform: none;
+    transform: none;
+}
+input[name=fol]:checked + label + .fol .page + .page {
+    z-index: 100;
+}
+
+input[name=fol]:checked + label + .fol ~ .fol .page {
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+input[name=fol]:checked + label + .fol ~ .fol .page + .page {
+    -moz-transform: none;
+    -o-transform: none;
+    -webkit-transform: none;
+    transform: none;
+
+    z-index: 0;
+}
+

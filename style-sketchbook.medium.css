@@ -1,0 +1,56 @@
+
+@import url(book/book.full.css);
+
+
+.book {
+    background: #ABC;
+    background: #A2B2C2;
+    border: 10px solid #ABC;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000;
+    line-height: 1.2em;
+    width: 95%;
+}
+
+input[name=fol]:checked + label + .fol {
+    margin-top: -1.2em;
+}
+
+.page {
+    background-color: #fff;
+    background-image:
+        -moz-linear-gradient(right, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 50px),
+        -moz-linear-gradient(0deg, transparent 4.8em, rgba(224, 27, 27, .5) 4.8em, rgba(224, 27, 27, .5) 5em, transparent 5em),
+        -moz-linear-gradient(#ABCDEF .1em, transparent .1em);
+    background-image:
+        -o-linear-gradient(right, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 50px),
+        -o-linear-gradient(0deg, transparent 4.8em, rgba(224, 27, 27, .5) 4.8em, rgba(224, 27, 27, .5) 5em, transparent 5em),
+        -o-linear-gradient(#ABCDEF .1em, transparent .1em);
+    background-image:
+        -webkit-linear-gradient(right, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 50px),
+        -webkit-linear-gradient(0deg, transparent 1.8em, rgba(224, 27, 27, .5) 1.8em, rgba(224, 27, 27, .5) 2em, transparent 2em),
+        -webkit-linear-gradient(#ABCDEF .1em, transparent .1em);
+    background-size: 100% 1.2em;
+    border-radius: 50% / 10px;
+    box-shadow: -4px -4px 5px #777;
+
+    min-height: 36em;
+    padding: 1.2em 2em 1.2em 3em;
+}
+
+.page + .page{
+    background-image:
+        -moz-linear-gradient(left, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 50px),
+        -moz-linear-gradient(0deg, transparent 4.8em, rgba(224, 27, 27, .5) 4.8em, rgba(224, 27, 27, .5) 5em, transparent 5em),
+        -moz-linear-gradient(#ABCDEF .1em, transparent .1em);
+    background-image:
+        -o-linear-gradient(left, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 50px),
+        -o-linear-gradient(0deg, transparent 4.8em, rgba(224, 27, 27, .5) 4.8em, rgba(224, 27, 27, .5) 5em, transparent 5em),
+        -o-linear-gradient(#ABCDEF .1em, transparent .1em);
+    background-image:
+        -webkit-linear-gradient(left, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 50px),
+        -webkit-linear-gradient(0deg, transparent 1.8em, rgba(224, 27, 27, .5) 1.8em, rgba(224, 27, 27, .5) 2em, transparent 2em),
+        -webkit-linear-gradient(#ABCDEF .1em, transparent .1em);
+    background-size: 100% 1.2em;
+    box-shadow: 4px -4px 5px #777;
+}

@@ -1,0 +1,54 @@
+
+.book .book-nav-toggle {
+    position: absolute;
+}
+
+.book .book-nav-toggle:focus + .book-nav {
+    background: #000;
+    color: #fff;
+    bottom: auto;
+    top: 100px;
+    width: 250px;
+}
+.book .book-nav .book-nav-on,
+.book .book-nav .book-nav-off {
+    display: none;
+}
+.book .book-nav-toggle:checked:focus + .book-nav .book-nav-off {
+    display: block;
+}
+.book .book-nav-toggle:not(:checked):focus + .book-nav .book-nav-on {
+    display: block;
+}
+
+.book:hover .book-nav {
+    bottom: 0;
+    height: 50px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.book .book-nav-toggle:checked + .book-nav,
+.book-nav:hover {
+    background: rgba(255, 255, 255, .2);
+}
+
+.book .book-nav-toggle:checked ~ label:after,
+.book .book-nav:hover ~ label:after {
+    display: block !important;
+    height: auto !important;
+    left: auto !important;
+    position: fixed !important;
+    right: auto !important;
+    top: auto !important;
+    visibility: visible !important;
+    width: auto !important;
+    z-index: 1000 !important;
+
+    bottom: 10px;
+    color: #000;
+    content: attr(data-value);
+    font: bold 15px/25px sans-serif;
+}

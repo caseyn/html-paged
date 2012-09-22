@@ -1,0 +1,77 @@
+/**
+ * Paged
+ *
+ * Styles
+ *
+ * Paged requires strict markup.
+ *
+ *   <article id="book-1" class="paged">
+ *     <input id="paged-status-1" class="paged-status" type="radio" name="book-1-page" value="1">
+ *     <label class="paged-label" for="paged-status-1">1</label>
+ *     <section class="paged-page">
+ *
+ *     </section>
+ *
+ *     <input id="paged-status-2" class="paged-status" type="radio" name="book-1-page" value="2">
+ *     <label class="paged-label" for="paged-status-2">2</label>
+ *     <section class="paged-page">
+ *
+ *     </section>
+ *   </article>
+ *
+ * @package book
+ * @version 1.0-alpha1
+ * @cssdoc version 1
+ */
+ 
+.paged {
+    position: relative;
+}
+
+    .paged-status {
+        display: none;
+    }
+    
+    .paged-label {
+        cursor: pointer;
+        display: inline-block;
+        position: static;
+    }
+    
+        .paged-label:after {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            width: 50px;
+            z-index: 99;
+        }
+        .paged-label:hover:after {
+            background: rgba(0, 0, 0, .1);
+        }
+        
+        .paged-status:checked ~ .paged-label:after {
+            visibility: hidden; /* TODO accessible? */
+        }
+        .paged-status:checked ~ .paged-status ~ .paged-label:after {
+            left: auto;
+            right: 0;
+            visibility: visible;
+        }
+        .paged-status:checked ~ .paged-status ~ .paged-status ~ .paged-label:after {
+            z-index: 98;
+        }
+    
+    .paged-page {
+        visibility: hidden;
+    }
+    
+    .paged-status:checked ~ .paged-page {
+        visibility: visible;
+    }
+    
+    .paged-status:checked ~ .paged-page ~ .paged-page {
+        visibility: hidden;
+    }

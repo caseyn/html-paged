@@ -1,0 +1,120 @@
+/**
+ * Book
+ *
+ * Styles
+ *
+ * @package book
+ * @version 1.0-alpha1
+ * @cssdoc version 1
+ */
+
+.book {
+    box-sizing: border-box;
+    margin: 50px auto;
+    position: relative;
+}
+.book:after {
+    clear: both;
+    content: " ";
+    display: block;
+}
+
+input[name=fol] {
+    position: absolute;display: none;
+    visibility: hidden;
+    z-index: -1;
+}
+
+
+input[name=fol] + label {
+    border: 2px solid transparent;
+    border-radius: 1em;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #FFF;
+    display: inline-block;
+    line-height: 1em;
+    margin-top: -50px;
+    min-width: 2em;
+    padding: 5px;
+    text-align: center;
+    vertical-align: top;
+}
+
+input[name=fol]:checked + label {
+    background: #FFF;
+    color: #000;
+    cursor: pointer;
+}
+input[name=fol]:focus + label,
+input[name=fol] + label:hover {
+    border: 2px solid #E59700;
+    cursor: pointer;
+}
+
+input[name=fol] + label:after {
+    background: transparent;
+    -moz-boz-sizing: border-box;
+    boz-sizing: border-box;
+    content: " ";
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 50px;
+    z-index: 99;
+}
+input[name=fol] + label:hover:after {
+    background: rgba(0, 0, 0, .1) !important;
+}
+
+
+.page {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    float: left;
+    position: relative;
+    width: 50%;
+}
+.page + .page:after {
+  clear: left;
+  content: "";
+  display: block;
+}
+
+/*@media all and (max-width: 600px) {
+    html,
+    body {
+        background-image: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .book {
+        background: none !important;
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        margin: 0 !important;
+        overflow: hidden;
+        width: 100% !important;
+    }
+    .book .fol {
+        display: block !important;
+    }
+    .book .page {
+        background: #FFF !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        display: block !important;
+        float: none !important;
+        min-height: 0 !important;
+        padding: 1em !important;
+        width: auto !important;
+    }
+}*/
+
+

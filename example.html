@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Paged HTML</title>
+
+    <link rel="stylesheet" type="text/css" href="style-sketchbook.css" title="Sketchbook">
+    <link rel="alternate stylesheet" type="text/css" href="style-basic.css" title="Basic" />
+</head>
+<body>
+
+<article class="paged book" itemscope itemtype="http://schema.org/Book">
+    <input type="checkbox" class="book-nav-toggle"
+        label="Navigation always visible"
+        aria-describedby="book-1-book-nav">
+    <div id="book-1-book-nav" class="book-nav">
+        <div class="book-nav-on">
+            <p>Currently on</p>
+        </div>
+        <div class="book-nav-off">
+            <p>Currently off</p>
+        </div>
+    </div>
+
+
+    <input type="checkbox" class="book-toc-toggle"
+        label="Display table of contents"
+        aria-describedby="book-1-book-toc">
+
+    <input type="radio" id="book-1-cover" class="paged-status"
+        name="fol" value="cover">
+    <label class="paged-label"
+        for="book-1-cover" title="Goto cover" data-value="cover">Cover</label>
+    <section class="paged-page fol cover">
+        <div class="page">
+            <p><a href="#cover-1">Cover</a></p>
+        </div>
+    </section>
+
+    <input type="radio" id="fol-1" class="paged-status"
+        name="fol" value="1">
+    <label class="paged-label"
+        for="fol-1" title="Goto page 1" data-value="1">1</label>
+    <section class="paged-page fol">
+        <div class="page">
+            <p><a href="#fol-1">Page 1</a></p>
+        </div>
+        <div class="page">
+            <p>Page 1</p>
+        </div>
+    </section>
+
+    <input type="radio" id="fol-2" class="paged-status"
+        name="fol" value="2" checked="checked" autofocus>
+    <label class="paged-label"
+        for="fol-2" title="Goto page 2" data-value="2">2</label>
+    <section class="paged-page fol">
+        <div class="page">
+            <h1>Look mum, no <del>hands</del> Javascript!!</h1>
+
+            <figure>
+                <!--<object type="image/svg+xml" data="tricycle.svg">-->
+                    <img src="tricycle.800.png">
+                <!--</object>-->
+            </figure>
+
+            <h2>How does it work!?</h2>
+
+            <p><a href="#fol-2">Page 2</a></p>
+            <p><label for="fol-5"><button>Goto page 5</button></label></p>
+        </div>
+        <div class="page">
+            <h1>Obliquis vesper coegit unda nullaque</h1>
+            <p>Deducite habentem obsistitur <a href="#">congestaque sectamque</a> proxima cesserunt. Nubibus iunctarum bene campos mundum nondum semina usu meis. Cetera ne innabilis usu praebebat imagine descenderat speciem. Viseret pronaque omni caelo. Congestaque principio deducite erat: umentia duae quisque freta terra. Frigore finxit homini semine dixere acervo phoebe.</p>
+            <h2>Declivia suis sive inminet membra</h2>
+            <h3>Lanient mutastis aliis horrifer melioris</h3>
+            <h4>Peragebant fert ventis mixta tellure</h4>
+            <p>Quisquis induit reparabat mentisque. Frigida coegit cetera obsistitur titan congestaque. Nebulas caligine aberant aetas manebat. Homini fratrum spectent fulminibus elementaque. Surgere liquidum habitabilis semina nullus diu fuerat. Tuti verba amphitrite colebat natus.</p>
+            <ul>
+                <li>Homo proxima super tumescere permisit montes animalibus pinus tuba invasit regio mundi</li>
+                <li>Margine diversa ulla <a href="#">congestaque sectamque</a> terram lapidosos regio modo sorbentur</li>
+                <li>Triones fuerat conversa caelum tractu terrarum austro contraria ut securae modo otia caelum tenent tuba austro effigiem regna ipsa inter</li>
+                <li>Animal iapeto ille terrarum evolvit nam levius instabilis subsidere rapidisque ad sive orbis fabricator grandia pinus liberioris certis extendi tegit valles his freta totidemque</li>
+                <li>Formaeque pressa quam rapidisque liquidas lapidosos erectos ventos horrifer ora terras erat: flamma quarum</li>
+                <li>Convexi longo melior fuerant caeca recepta regio flamma nullaque quanto distinxit alta undae otia seductaque nullo militis inclusum quin fuit ubi meis nabataeaque</li>
+            </ul>
+            <p>Ensis circumfluus his conversa locum minantia. Caecoque addidit retinebat postquam ut coeperunt onus circumfuso tempora. Circumdare certis. Fulminibus haec fuerant. Foret timebat premuntur ambitae nix aera. Homo gentes nix piscibus habitandae.</p>
+            <ol>
+                <li>Primaque divino erat: circumfluus secrevit terras orbem melioris librata diu praeter indigestaque fuit quem pronaque chaos: silvas plagae secuit piscibus spectent</li>
+                <li>Semine alta dixere quarum pinus habentem freta tanto figuras undas corpora omni quoque agitabilis aequalis totidemque</li>
+                <li>Fuit alto illi cognati librata pendebat iudicis pace ora orbis nitidis forma stagna facientes solidumque nam triones locum capacius mundo contraria cetera liquidas amphitrite numero</li>
+            </ol>
+            <p>Ignea praeter premuntur dixere ad litora aethera. Sive cingebant erat:. Aliud orbis feras subsidere ligavit:. Pronaque origine. Forma tanto effigiem acervo plagae militis pugnabant. Traxit caesa recens ipsa sic his habentia. Innabilis nisi carentem et. Sidera ignea manebat cura discordia fuit inminet nondum dissaepserat.</p>
+        </div>
+    </section>
+
+    <input type="radio" id="fol-3" class="paged-status"
+        name="fol" value="3">
+    <label class="paged-label"
+        for="fol-3" title="Goto page 3" data-value="3">3</label>
+    <section class="paged-page fol">
+        <div class="page">
+            <h1>Alternatives</h1>
+            <h2>Anchors combined with :target</h2>
+            <p>
+            
+            </p>
+            <p>Pro's</p>
+            <ul>
+                <li>Target is represented in the URL</li>
+            </ul>
+            <p>Con's</p>
+            <ul>
+                <li>You can only have one target</li>
+            </ul>
+        </div>
+        <div class="page">
+            <p>Page 3</p>
+        </div>
+    </section>
+
+    <input type="radio" id="fol-4" class="paged-status"
+        name="fol" value="4">
+    <label class="paged-label"
+        for="fol-4" title="Goto page 4" data-value="4">4</label>
+    <section class="paged-page fol">
+        <div class="page">
+            <p><a href="#fol-4">Page 4</a></p>
+        </div>
+        <div class="page">
+            <p>Page 4</p>
+        </div>
+    </section>
+
+    <input type="radio" id="fol-5" class="paged-status"
+        name="fol" value="5">
+    <label class="paged-label"
+        for="fol-5" title="Goto page 5" data-value="5">5</label>
+    <section class="paged-page fol">
+        <div class="page">
+            <p><a href="#fol-5">Page 5</a></p>
+            <p style="height:400px">Bla</p>
+            <p>Bla</p>
+            <p style="height:400px">Bla</p>
+            <p>Bla</p>
+        </div>
+        <div class="page">
+            <p>Page 5</p>
+        </div>
+    </section>
+
+    <input type="radio" id="fol-6" class="paged-status"
+        name="fol" value="6">
+    <label class="paged-label"
+        for="fol-6" title="Goto page 6" data-value="6">6</label>
+    <section class="paged-page fol">
+        <div class="page">
+            <p><a href="#fol-6">Page 6</a></p>
+            <p style="height:400px">Bla</p>
+            <p>Bla</p>
+        </div>
+        <div class="page">
+            <p>Page 6</p>
+        </div>
+    </section>
+
+    <input type="radio" id="fol-7" class="paged-status"
+        name="fol" value="7">
+    <label class="paged-label"
+        for="fol-7" title="Goto page 7" data-value="7">7</label>
+    <section class="paged-page fol">
+        <div class="page">
+            <p><a href="#fol-7">Page 7</a></p>
+            <p style="height:400px">Bla</p>
+            <p>Bla</p>
+        </div>
+        <div class="page">
+            <p>Page 7</p>
+        </div>
+    </section>
+
+    <input type="radio" id="fol-8" class="paged-status"
+        name="fol" value="8">
+    <label class="paged-label"
+        for="fol-8" title="Goto page 8" data-value="8">8</label>
+    <section class="paged-page fol">
+        <div class="page">
+            <p><a href="#fol-8">Page 8</a></p>
+            <p style="height:400px">Bla</p>
+            <p>Bla</p>
+        </div>
+        <div class="page">
+            <p>Page 8</p>
+        </div>
+    </section>
+
+    <input type="radio" id="fol-9" class="paged-status"
+        name="fol" value="9">
+    <label class="paged-label"
+        for="fol-9" title="Goto page 9" data-value="9">9</label>
+    <section class="paged-page fol">
+        <div class="page">
+            <p><a href="#fol-9">Page 9</a></p>
+            <p style="height:400px">Bla</p>
+            <p>Bla</p>
+        </div>
+        <div class="page">
+            <p>Page 9</p>
+        </div>
+    </section>
+
+    <input type="radio" id="fol-10" class="paged-status"
+        name="fol" value="10">
+    <label class="paged-label"
+        for="fol-10" title="Goto page 10" data-value="10">10</label>
+    <section class="paged-page fol">
+        <div class="page">
+            <p><a href="#fol-10">Page 10</a></p>
+            <p style="height:400px">Bla</p>
+            <p>Bla</p>
+        </div>
+        <div class="page">
+            <p>Page 10</p>
+        </div>
+    </section>
+
+</article>
+
+</body>
+</html>

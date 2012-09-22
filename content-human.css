@@ -1,0 +1,86 @@
+@import url(//fonts.googleapis.com/css?family=Nothing+You+Could+Do);
+
+body {
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+::selection {
+    background: #ffb7b7; /* Safari */
+	}
+::-moz-selection {
+	background: #ffb7b7; /* Firefox */
+}
+
+h1 {
+    font-size: 2em;
+    margin: .6em 0 1.2em 0;
+    text-align: left;
+    -moz-text-align-last: right;
+    text-align-last: right;
+}
+
+p {
+    margin: 1.2em 0;
+}
+
+p a {
+    color: rgba(27, 27, 127, .5);
+    position: relative;
+    text-decoration: none;
+}
+p a:after {
+    border: 2px solid rgba(27, 27, 127, .5);
+    border-left: 0;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 100%;
+    left: -5px;
+    padding: 5px;
+    position: absolute;
+    top: -5px;
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    width: 100%;
+}
+
+del {
+    position: relative;
+    text-decoration: none;
+}
+del:after {
+    border-bottom: .3em solid rgba(255,0,0,.6);
+    border-left: .5em solid rgba(255,0,0,.4);
+    border-top: .1em solid rgba(255,0,0,.4);
+    content: "";
+    display: block;
+    height: 2px;
+    left: -5px;
+    position: absolute;
+    top: .5em;
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    width: 100%;
+}
+
+img,
+object {
+    max-width: 100%;
+}
+
+figure {
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+
+

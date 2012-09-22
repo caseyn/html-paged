@@ -1,0 +1,70 @@
+
+.book-toc-toggle {
+    position: absolute;
+    left: -100px;
+}
+
+.book-toc-toggle:checked {
+    border: 1px solid red;
+}
+
+.book-toc-toggle:checked ~ .fol .page * {
+}
+.book-toc-toggle:checked ~ .fol .page *:before,
+.book-toc-toggle:checked ~ .fol .page *:after,
+.book-toc-toggle:checked ~ .fol .page button,
+.book-toc-toggle:checked ~ .fol .page figure,
+.book-toc-toggle:checked ~ .fol .page input,
+.book-toc-toggle:checked ~ .fol .page img,
+.book-toc-toggle:checked ~ .fol .page object,
+.book-toc-toggle:checked ~ .fol .page ol,
+.book-toc-toggle:checked ~ .fol .page p,
+.book-toc-toggle:checked ~ .fol .page select,
+.book-toc-toggle:checked ~ .fol .page textarea,
+.book-toc-toggle:checked ~ .fol .page ul {
+    border: 0;
+    font-size: 0 !important;
+    height: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+
+.book-toc-toggle:checked ~ .fol .page h1,
+.book-toc-toggle:checked ~ .fol .page h2,
+.book-toc-toggle:checked ~ .fol .page h3,
+.book-toc-toggle:checked ~ .fol .page h4,
+.book-toc-toggle:checked ~ .fol .page h5,
+.book-toc-toggle:checked ~ .fol .page h6 {
+    font-size: 16px !important;
+    line-height: 1.2em;
+    margin: 1.2em 0 0 0;
+    -webkit-transition: all 1s;
+}
+
+.book-toc-toggle:checked ~ .fol .page h2 {
+    margin: 1.2em 0 0 1em;
+}
+
+.book-toc-toggle:checked ~ .fol .page h3 {
+    margin: 1.2em 0 0 2em;
+}
+
+.book-toc-toggle:checked ~ .fol .page h4 {
+    margin: 1.2em 0 0 3em;
+}
+
+.book-toc-toggle:checked ~ .fol .page h5 {
+    margin: 1.2em 0 0 4em;
+}
+
+.book-toc-toggle:checked ~ .fol .page h6 {
+    margin: 1.2em 0 0 5em;
+}
